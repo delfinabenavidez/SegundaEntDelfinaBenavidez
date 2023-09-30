@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de procesos</title>
+  <style>
+    /* Agrega estilos CSS para resaltar los resultados */
+    #resultadoSuma, #resultadoResta, #resultadoConcatenacion, #resultadoDivision {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body onload="init()">
+  <h1>Simulador de procesos</h1>
+  <p>Elige el proceso que quieres simular:</p>
+  <ul>
+    <li><a href="#" onclick="ejecutarProceso('suma')">Suma</a></li>
+    <li><a href="#" onclick="ejecutarProceso('resta')">Resta</a></li>
+    <li><a href="#" onclick="ejecutarProceso('concatenacion')">Concatenación</a></li>
+    <li><a href="#" onclick="ejecutarProceso('division')">División</a></li>
+  </ul>
+  <p id="resultadoSuma"></p>
+  <p id="resultadoResta"></p>
+  <p id="resultadoConcatenacion"></p>
+  <p id="resultadoDivision"></p>
+  <script src="script.js"></script>
+</body>
+</html>
